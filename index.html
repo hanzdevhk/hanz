@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanz — Developer • Photographer</title>
+    <meta
+      name="description"
+      content="Hanz 的個人網站。以開發與攝影為主軸，分享作品、拍攝方向與聯絡方式。"
+    />
+    <meta name="theme-color" content="#f6f1ea" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./brand-icon.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Hanz home">
+        <img class="brand-mark" src="./brand-icon.png" alt="Hanz brand icon" />
+        <span class="brand-text">Hanz</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#developer">Developer</a>
+        <a href="#photographer">Photography</a>
+        <a href="#more">More</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">聯絡我</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">20 Y/O • POLYU YEAR 3 • BASED IN HONG KONG</p>
+          <h1>
+            我是 <span class="gradient-text">Hanz</span><br />
+            <span class="role-line">Developer & Photographer</span>
+          </h1>
+          <p class="hero-lead">
+            平時寫網站、App、遊戲，也持續做 Chrome Extensions；另一邊長期在拍風景、人像和 Cosplay。
+            我喜歡把想法做成能被真正使用的東西，也喜歡把一瞬間的光線與情緒，留成可以反覆回看的畫面。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#developer">看作品</a>
+            <a class="btn btn-secondary" href="#contact">合作 / 約拍</a>
+          </div>
+
+          <div class="hero-mini-stats hero-mini-stats-compact">
+            <article>
+              <strong data-count="2000000" data-suffix="+">0</strong>
+              <span>內容累積觀看</span>
+            </article>
+            <article>
+              <strong data-count="8" data-suffix="">0</strong>
+              <span>年魔術玩家</span>
+            </article>
+          </div>
+
+          <p class="hero-dream">
+            希望能在 23 歲前，開始環遊世界的旅居生活。
+          </p>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-frame tilt-card">
+            <div class="frame-topline">Current focus</div>
+            <div class="hero-seal-wrap">
+              <img src="./brand-icon.png" alt="" class="hero-seal" />
+            </div>
+            <div class="identity-list">
+              <div>
+                <span class="identity-index">01</span>
+                <div>
+                  <h3>Build</h3>
+                  <p>把想法做成真的能用、能玩、能被看見的東西。</p>
+                </div>
+              </div>
+              <div>
+                <span class="identity-index">02</span>
+                <div>
+                  <h3>Shoot</h3>
+                  <p>拍光、拍情緒，也拍那個剛剛好的瞬間。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-notes-column">
+            <div class="hero-note floating-card tilt-card">
+              <span class="chip">Build</span>
+              <p>我是實用主義的開發者。</p>
+            </div>
+            <div class="hero-note hero-note-alt floating-card tilt-card">
+              <span class="chip">Shoot</span>
+              <p>把心裡早就有的畫面，認真紀錄下來。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-strip reveal" id="about">
+        <div class="section-heading compact">
+          <p class="eyebrow">About</p>
+          <h2>我把開發和攝影都當成長期投入的創作方式：一邊把想法做成作品，一邊把感受到的畫面留下來。</h2>
+        </div>
+
+        <div class="intro-grid">
+          <article class="feature-card tilt-card">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 3 4 7l4 4"/><path d="m16 3 4 4-4 4"/><path d="m14 4-4 16"/></svg>
+            </div>
+            <h3>Developer</h3>
+            <p>
+              做過網站、App、遊戲，也持續把新想法做成可以上線的小產品。最近比較專注在 Chrome Extensions 和個人作品。
+            </p>
+          </article>
+
+          <article class="feature-card tilt-card">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h4l2-2h4l2 2h4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><circle cx="12" cy="12" r="3.2"/></svg>
+            </div>
+            <h3>Photography</h3>
+            <p>
+              平時拍風景，也拍人像。最近常去漫展拍 Cosplay，之前也有以攝影師身分參與香港教育大學活動的一日拍攝。
+            </p>
+          </article>
+
+          <article class="feature-card tilt-card feature-card-soft">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18"/><path d="M5 8c0-1.657 3.134-3 7-3s7 1.343 7 3-3.134 3-7 3-7-1.343-7-3Z"/><path d="M5 16c0-1.657 3.134-3 7-3s7 1.343 7 3-3.134 3-7 3-7-1.343-7-3Z"/></svg>
+            </div>
+            <h3>Side notes</h3>
+            <p>
+              我也長期在做影片內容創作，以及玩魔術與心靈術。這些興趣一直在影響我的節奏感、審美和表達方式。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="developer">
+        <div class="role-header">
+          <div>
+            <p class="eyebrow">Developer</p>
+            <h2>我是實用主義的開發者。</h2>
+          </div>
+          <p class="role-summary">
+            做過網站、App、遊戲，也做過產品型內容。最近把想法延伸到 Chrome Extensions，持續實驗「小而有用」和「小而好玩」這兩種方向。
+          </p>
+        </div>
+
+        <div class="developer-grid">
+          <article class="project-card wide tilt-card">
+            <div class="project-meta">Featured Extension</div>
+            <h3>Remember to Drink Water</h3>
+            <p>
+              一個輕量、好上手的喝水提醒工具，支援提醒、記錄、進度追蹤和雙語介面。
+            </p>
+            <ul class="project-tags">
+              <li>Chrome Extension</li>
+              <li>Productivity</li>
+              <li>Utility Tool</li>
+            </ul>
+            <a href="https://chromewebstore.google.com/detail/cafpnodmdffafhpccmgdckaalhamjhmp?utm_source=item-share-cb" target="_blank" rel="noreferrer">Open in Chrome Web Store ↗</a>
+          </article>
+
+          <article class="project-card tilt-card">
+            <div class="project-meta">Featured Extension</div>
+            <h3>Jump Jump Jump</h3>
+            <p>
+              像素風、節奏快、打開就能玩的跳躍遊戲，內建角色、技能、商店與不同模式。
+            </p>
+            <ul class="project-tags">
+              <li>Chrome Game</li>
+              <li>Pixel Style</li>
+              <li>Fast-paced</li>
+            </ul>
+            <a href="https://chromewebstore.google.com/detail/jump-jump-jump/ojacgakncffdblhompodeifeaddfndpa?authuser=5&hl=zh-TW" target="_blank" rel="noreferrer">Open in Chrome Web Store ↗</a>
+          </article>
+
+          <article class="project-card tilt-card">
+            <div class="project-meta">Past Work</div>
+            <h3>Web / App / Games</h3>
+            <p>
+              做過網站、App，以及兩款遊戲作品。對我來說，寫 code 最吸引的地方，是把抽象想法變成可以互動的體驗。
+            </p>
+            <ul class="project-tags">
+              <li>Website</li>
+              <li>App</li>
+              <li>Game Dev</li>
+            </ul>
+          </article>
+
+          <article class="project-card tilt-card">
+            <div class="project-meta">Social</div>
+            <h3>Developer Presence</h3>
+            <p>
+              我也會把開發相關的內容放到自己的平台上，分享作品、更新和一些最近正在做的東西。
+            </p>
+            <div class="social-stack">
+              <a href="https://www.youtube.com/@Hanzdev-666" target="_blank" rel="noreferrer">YouTube</a>
+              <a href="https://www.instagram.com/hanzdevhk?igsh=MXdtZ2F5ZWx3N2t1OQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="mailto:hanzinhk@gmail.com">Email</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="photographer">
+        <div class="role-header photo-role-header">
+          <div>
+            <p class="eyebrow">Photography</p>
+            <h2>攝影於我，是心中美好的映射。</h2>
+          </div>
+          <div class="poetic-copy">
+            <p>
+              當我心中積蓄了某種天色、某種寂靜、某首未完成的詩，世界便彷彿聽懂了，恰好為我佈置出那一幕。
+            </p>
+            <p>我只是把心裡早就有的那幅畫，紀錄下來。</p>
+          </div>
+        </div>
+
+        <div class="photo-layout">
+          <article class="photo-main tilt-card">
+            <div class="photo-stage">
+              <div class="photo-slides" id="photoSlides">
+                <img class="photo-slide is-active" src="./assets/photos/photo-01.jpg" alt="Hanz 的攝影作品" />
+              </div>
+              <div class="photo-badges">
+                <span>Landscape</span>
+                <span>Portrait</span>
+                <span>Event</span>
+                <span>Cosplay</span>
+              </div>
+              <div class="photo-controls">
+                <div class="photo-dots" id="photoDots" aria-label="Photography slideshow"></div>
+                <div class="photo-count"><span id="photoCurrent">1</span> / <span id="photoTotal">1</span></div>
+              </div>
+            </div>
+            <div class="photo-copy">
+              <h3>Recent focus</h3>
+              <p>
+                風景和人像我都拍，也常去漫展拍 Cosplay。拍攝對我來說不只是記錄，更像以光影為筆，替我記下心事。
+              </p>
+              <a href="https://www.instagram.com/hanzi_photography?igsh=amk5dDI5eDZ5M24w&utm_source=qr" target="_blank" rel="noreferrer">看攝影 IG ↗</a>
+            </div>
+          </article>
+
+          <div class="photo-side-grid">
+            <article class="mini-info-card tilt-card">
+              <h3>拍攝方向</h3>
+              <p>Landscape / Portrait / Event / Cosplay</p>
+            </article>
+            <article class="mini-info-card tilt-card emphasis">
+              <h3>約拍資訊</h3>
+              <p>可接互勉 / 互惠約拍，歡迎直接 IG DM 我。</p>
+            </article>
+            <article class="mini-info-card tilt-card">
+              <h3>我在意的東西</h3>
+              <p>光影、構圖、人物存在感，以及畫面停留在心裡的餘韻。</p>
+            </article>
+            <article class="mini-info-card tilt-card">
+              <h3>聯絡方式</h3>
+              <p>最快方式：攝影 IG 私訊。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="more">
+        <div class="section-heading compact">
+          <p class="eyebrow">More</p>
+          <h2>還有一些一直默默陪著我的事。</h2>
+        </div>
+
+        <div class="beyond-grid">
+          <article class="beyond-card tilt-card">
+            <h3>魔術 / 心靈術</h3>
+            <p>8 年魔術玩家與愛好者，做過一次商業演出，現在主要玩心靈術方向。</p>
+          </article>
+          <article class="beyond-card tilt-card">
+            <h3>影片內容創作</h3>
+            <p>累積約 2 百萬觀看，平時也會自己做企劃、拍攝、剪輯和內容節奏安排。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-section reveal" id="contact">
+        <div class="cta-panel tilt-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>有合作想法、開發需求，或者想約拍，都可以直接找我。</h2>
+            <p>
+              Email 適合談合作；想聊拍攝、互勉 / 互惠約拍，直接 IG DM 我會最快。
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hanzinhk@gmail.com">hanzinhk@gmail.com</a>
+            <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://www.instagram.com/hanzdevhk?igsh=MXdtZ2F5ZWx3N2t1OQ%3D%3D&utm_source=qr">Developer IG</a>
+            <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://www.instagram.com/hanzi_photography?igsh=amk5dDI5eDZ5M24w&utm_source=qr">Photography IG</a>
+            <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://www.youtube.com/@Hanzdev-666">YouTube</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Hanz. All rights reserved.</p>
+    </footer>
+
+    <button class="music-toggle" id="musicToggle" aria-expanded="false" aria-controls="musicPanel">
+      <span class="music-bars" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </span>
+      <span class="music-label">Music</span>
+    </button>
+
+    <aside class="music-panel" id="musicPanel" hidden>
+      <div class="music-panel-head">
+        <div>
+          <p>Now playing</p>
+          <strong>美しきもの · Sound Horizon</strong>
+        </div>
+        <button class="music-close" id="musicClose" aria-label="Close music player">×</button>
+      </div>
+      <div class="music-disc-wrap" aria-hidden="true">
+        <div class="music-disc"></div>
+      </div>
+      <audio class="music-audio" id="musicAudio" controls preload="metadata">
+        <source src="./assets/audio/utsukushiki-mono.mp3" type="audio/mpeg" />
+      </audio>
+      <button class="music-play" id="musicPlay">播放音樂</button>
+    </aside>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
