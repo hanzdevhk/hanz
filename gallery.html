@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Gallery — Hanz</title>
+    <meta
+      name="description"
+      content="Hanz 的高清攝影作品圖庫，收錄風景、自然、人像、活動與 Cosplay 攝影。"
+    />
+    <meta name="theme-color" content="#121515" />
+    <meta property="og:title" content="Photography Gallery — Hanz" />
+    <meta
+      property="og:description"
+      content="以更完整、更接近原作的尺寸觀看 Hanz 的攝影作品。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/photos/photo-03.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./brand-icon.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+  </head>
+  <body class="gallery-page">
+    <div class="gallery-grain" aria-hidden="true"></div>
+
+    <header class="site-header gallery-header">
+      <a class="brand" href="./index.html#home" aria-label="返回 Hanz 首頁">
+        <img class="brand-mark" src="./brand-icon.png" alt="" />
+        <span class="brand-text">Hanz</span>
+      </a>
+
+      <nav class="nav" aria-label="主要導航">
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#developer">Developer</a>
+        <a href="./index.html#photographer">Photography</a>
+        <a class="is-current" href="./gallery.html" aria-current="page">Gallery</a>
+        <a href="./index.html#more">More</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="./index.html#contact">聯絡我</a>
+    </header>
+
+    <main class="gallery-main">
+      <section class="gallery-hero">
+        <div class="gallery-hero-copy">
+          <p class="gallery-kicker">Photography archive</p>
+          <h1>
+            <span>讓畫面，</span>
+            <span>停留久一點。</span>
+          </h1>
+          <p>
+            這裡是比首頁更完整的攝影作品集。點開任何照片即可用接近原作的尺寸觀看，
+            也可以使用鍵盤方向鍵逐張瀏覽。
+          </p>
+        </div>
+
+        <div class="gallery-hero-meta">
+          <div>
+            <span>Collection</span>
+            <strong id="galleryCount">68 works</strong>
+          </div>
+          <div>
+            <span>Based in</span>
+            <strong>Hong Kong</strong>
+          </div>
+          <a href="https://www.youtube.com/@Hanz-ttt" target="_blank" rel="noreferrer">
+            Watch photography films ↗
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery-collection" aria-labelledby="collectionTitle">
+        <div class="gallery-toolbar">
+          <div>
+            <p class="gallery-kicker">Selected works</p>
+            <h2 id="collectionTitle">作品集</h2>
+          </div>
+          <div class="gallery-filters" id="galleryFilters" aria-label="篩選攝影作品"></div>
+        </div>
+
+        <div class="gallery-status" id="galleryStatus" role="status" aria-live="polite">
+          正在整理作品…
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+
+      <section class="gallery-outro">
+        <p>想看拍攝過程與影像故事？</p>
+        <h2>攝影不只停在一張照片。</h2>
+        <div class="gallery-outro-actions">
+          <a class="gallery-primary-link" href="https://www.youtube.com/@Hanz-ttt" target="_blank" rel="noreferrer">
+            前往攝影 YouTube
+          </a>
+          <a href="https://www.instagram.com/hanzi_photography?igsh=amk5dDI5eDZ5M24w&amp;utm_source=qr" target="_blank" rel="noreferrer">
+            Photography Instagram ↗
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer gallery-footer">
+      <p>© <span id="year"></span> Hanz. All rights reserved.</p>
+    </footer>
+
+    <div class="gallery-lightbox" id="galleryLightbox" hidden>
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <section
+        class="lightbox-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lightboxTitle"
+      >
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="關閉圖片">×</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="上一張圖片">←</button>
+        <figure>
+          <div class="lightbox-image-wrap">
+            <img id="lightboxImage" src="" alt="" />
+            <div class="lightbox-loader" id="lightboxLoader">Loading high resolution…</div>
+          </div>
+          <figcaption>
+            <div>
+              <span id="lightboxCategory"></span>
+              <h2 id="lightboxTitle"></h2>
+            </div>
+            <p id="lightboxCounter"></p>
+          </figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="下一張圖片">→</button>
+      </section>
+    </div>
+
+    <script src="./gallery.js"></script>
+  </body>
+</html>

@@ -687,6 +687,12 @@ main,
   font-weight: 700;
 }
 
+.photo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
 .social-stack {
   gap: 10px;
   margin-top: 18px;
@@ -1089,6 +1095,10 @@ main,
 }
 
 @media (max-width: 1080px) {
+  .nav {
+    gap: 16px;
+  }
+
   .hero,
   .photo-layout,
   .section-heading,

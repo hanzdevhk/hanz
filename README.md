@@ -7,6 +7,11 @@
 - `index.html`：主頁面
 - `styles.css`：樣式
 - `script.js`：互動效果
+- `gallery.html`：高清攝影作品圖庫
+- `gallery.css`：圖庫專用樣式
+- `gallery.js`：圖庫載入、篩選與燈箱功能
+- `assets/gallery/`：圖庫用 4K WebP 展示圖片
+- `assets/gallery/thumbs/`：圖庫快速載入縮圖
 - `brand-icon.png`：網站 icon / 品牌圖示
 - `DSC02436-23.jpg`：攝影區主圖
 - `.nojekyll`：讓 GitHub Pages 直接以靜態頁面方式部署
@@ -22,4 +27,13 @@
 
 ## 備註
 
-右下角音樂按鈕使用嵌入播放器方式載入，不是把音訊檔直接包進網站。
+右下角音樂按鈕播放 `assets/audio/utsukushiki-mono.mp3`。
+
+## 新增 Gallery 相片
+
+將原圖放進 `assets/photos/`，再更新 `gallery.js` 的作品清單並產生：
+
+- 長邊 3840px 的 WebP 展示版本
+- 長邊 1200px 的 WebP 縮圖版本
+
+原圖保留作攝影存檔，網站只部署壓縮後的展示版本，以免訪客一次下載數百 MB。
